@@ -1,0 +1,82 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	font-family: "Cambria";
+	font-size: 1.2rem;
+	min-height: 100%;
+}
+nav{
+	position: relative;
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgb(255 255 255 / 30%);
+    font-size: 30px;
+}
+#asidepr{
+	font-size: 30px;
+	font-family: "Cambria";
+	text-align: center;
+	color: #6f456a;
+}
+#menu {
+    height: 50px;
+    margin: auto;
+    width: 1000px;
+}
+.cl-effect-11 a {
+	color: white;
+	text-shadow: none;
+}
+
+.grid-container > * {
+	box-shadow: -1px 1px 7px 0px rgba(0, 0, 0.75);
+	border-radius: 4px;
+	padding: 10px;
+	text-align: center;
+}
+.header{
+	grid-area: header;
+	background-color: #EEF0F2;
+	font-family: "Cambia";
+	font-size: 80px;
+}
+.navbar{
+	grid-area: navbar;
+	background-color: #000F08;
+}
+.sidebar{
+	grid-area: sidebar;
+	background-color: #aac6dc;
+	text-align: left;
+}
+.article{
+	grid-area: main;
+	background-color: #0A8754;
+	text-align: left;
+	font-size: 30px;
+}
+.footer {
+	grid-area: footer;
+	background-color: #000F08;
+	color: white;
+}
+.grid-container {
+	display: grid;
+	gap: 10px;
+	grid-template: 
+	"header header"100px
+	"navbar navbar"55px
+	"main sidebar"auto
+	"footer footer"75px;
+
+}
